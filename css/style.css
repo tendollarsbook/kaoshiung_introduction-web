@@ -869,3 +869,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 14px;
   margin-top: 24px;
   color: #484848; }
+
+@media (max-width: 768px) {
+  .col-footer {
+    width: 50%; } }
