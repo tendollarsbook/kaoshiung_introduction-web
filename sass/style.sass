@@ -2,12 +2,14 @@
   width: $w
   height: $h
 
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css')
+
 $maincolor: #08192D
 $subcolor: #BEC23F
 $whitecolor: #fefefe
 
 *
-  font-family: 'Helvetica', 微軟正黑體, 'robot', arial, sans-serif
+  font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif
   position: relative
   box-sizing: border-box
 
@@ -128,12 +130,20 @@ h1,h2,h3,h4,h5,h6,p
   outline: none
   transition: all 0.3s
   border-radius: 5px
+  font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif
+  
   &:hover
     background-color: $subcolor
     color: #fff
 
 .info-btn
   margin-top: 24px
+
+@media(max-width:768px)
+  .info-btn
+    float: left
+    left: 50%
+    transform: translateX(-50%)
 
 @media(max-width:768px)
   .heading
@@ -386,19 +396,23 @@ h1,h2,h3,h4,h5,h6,p
 
 .heading
   font-size: 72px
+  font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif  
   color: #fff
   margin-bottom: 48px
   margin-top: 150px
-  // z-index: 100
+  line-height: 1.5
     
 // about
 .info
+  font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif  
   color: #ffffff
   .info-title
     font-size: 48px
     line-height: 2
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif    
     // padding-bottom: 48px
   .info-subtitle
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif    
     font-size: 40px
     margin-bottom: 48px
     padding-bottom: 24px
@@ -410,6 +424,7 @@ h1,h2,h3,h4,h5,h6,p
       +size( 160px, 4px)
       background-color: $subcolor
   .info-text
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif    
     font-size: 16px
     line-height: 32px
 
@@ -420,6 +435,16 @@ h1,h2,h3,h4,h5,h6,p
     &:before
       left: inherit
       right: 0
+
+@media(max-width:768px)
+  .dadong-info
+    z-index: 5
+    text-align: left
+    .info-subtitle
+      &:before
+        bottom: 0
+        left: 0
+
 
 @media(max-width:768px)
   .info
@@ -695,16 +720,21 @@ h1,h2,h3,h4,h5,h6,p
   float: right
   margin-top: 16px
 
+@media(max-width:768px)
+  .spot-btn
+    float: left
+    left: 50%
+    transform: translateX(-50%)
+
 // youtube
 .youtubebox
   +size(100%)
   margin-top: 150px
 .youtube
-  // +size(100%)
   width: 100%
-  // position: absolute
   left: 50%
   transform: translateX(-50%)
+
 @media(max-width:768px)
   .youtubebox
     margin-top: 32px
@@ -769,6 +799,12 @@ h1,h2,h3,h4,h5,h6,p
 // contact
 .contact-btn
   // margin-top: 16px
+@media(max-width:768px)
+  .contact-btn
+    float: left
+    left: 50%
+    transform: translateX(-50%)
+
 .lonely-info
   z-index: 10
 

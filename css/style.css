@@ -1,6 +1,6 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 * {
-  font-family: 'Helvetica', 微軟正黑體, 'robot', arial, sans-serif;
+  font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -115,13 +115,22 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif; }
   .btn:hover {
     background-color: #BEC23F;
     color: #fff; }
 
 .info-btn {
   margin-top: 24px; }
+
+@media (max-width: 768px) {
+  .info-btn {
+    float: left;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); } }
 
 @media (max-width: 768px) {
   .heading {
@@ -409,16 +418,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 .heading {
   font-size: 72px;
+  font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
   color: #fff;
   margin-bottom: 48px;
-  margin-top: 150px; }
+  margin-top: 150px;
+  line-height: 1.5; }
 
 .info {
+  font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
   color: #ffffff; }
   .info .info-title {
     font-size: 48px;
-    line-height: 2; }
+    line-height: 2;
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif; }
   .info .info-subtitle {
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
     font-size: 40px;
     margin-bottom: 48px;
     padding-bottom: 24px; }
@@ -431,6 +445,7 @@ h1, h2, h3, h4, h5, h6, p {
       height: 4px;
       background-color: #BEC23F; }
   .info .info-text {
+    font-family: 'Helvetica', 'Noto Sans TC', arial, sans-serif;
     font-size: 16px;
     line-height: 32px; }
 
@@ -440,6 +455,14 @@ h1, h2, h3, h4, h5, h6, p {
   .dadong-info .info-subtitle:before {
     left: inherit;
     right: 0; }
+
+@media (max-width: 768px) {
+  .dadong-info {
+    z-index: 5;
+    text-align: left; }
+    .dadong-info .info-subtitle:before {
+      bottom: 0;
+      left: 0; } }
 
 @media (max-width: 768px) {
   .info {
@@ -746,6 +769,14 @@ h1, h2, h3, h4, h5, h6, p {
   float: right;
   margin-top: 16px; }
 
+@media (max-width: 768px) {
+  .spot-btn {
+    float: left;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); } }
+
 .youtubebox {
   width: 100%;
   height: 100%;
@@ -820,6 +851,14 @@ h1, h2, h3, h4, h5, h6, p {
     left: 0;
     background-position: center;
     background-size: cover; }
+
+@media (max-width: 768px) {
+  .contact-btn {
+    float: left;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); } }
 
 .lonely-info {
   z-index: 10; }
